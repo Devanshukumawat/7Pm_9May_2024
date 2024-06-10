@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./media/bgv.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/bgv.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Second slide label</h5>
+                          <p>Some representative placeholder content for the second slide.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./media/bgv.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Third slide label</h5>
+                          <p>Some representative placeholder content for the third slide.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container d-flex flex-column mt-4 border border-danger border-3">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class=" text-danger">Form</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label for="">First Name</label>
+          <input type="text" name="" id="" class="form-control" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <label for="">Last Name</label>
+          <input type="text" name="" id="" class="form-control" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+          <label for="">Password</label>
+          <input type="password" name="" id="" class="form-control" />
+        </div>
+        <div class="col-md-2">
+          <label for="">Confirm password</label>
+          <input type="password" name="" id="" class="form-control" />
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+            <select name="" id="" class="form-select">
+                <option value="">html</option>
+                <option value="">css</option>
+                <option value="">js</option>
+            </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2">
+            <label for="">T&C</label>
+            <div class="form-check">
+                <input type="checkbox" name="" id="" class="form-check-input">
+            </div>
+            
+        </div>
+        <div class="col-md-2">
+            <label for="">Radio</label>
+            <div class="form-check">
+                <input type="radio" name="" id="" class="form-check-input">
+            </div>
+            
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-4">
+            <input type="submit" value="Submit" class="btn btn-success form-control">
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-danger position-relative">
+                    Message
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                      34+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <button class="btn btn-outline-success">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mt-4 float-end">
+            <div class="col-md-12">
+                <div class="spinner-border text-danger" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <span class="bg-danger d-block">Lorem, ipsum dolor.</span>
+    <div class="bg-success d-inline">Lorem ipsum dolor sit amet.</div>
+
+    <span>
+      <i class="bi bi-wordpress fs-1 text-success"></i>
+      <i class="bi bi-windows fs-1 text-info"></i>
+    </span>
+
+  </body>
+</html>

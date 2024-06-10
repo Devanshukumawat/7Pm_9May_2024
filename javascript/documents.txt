@@ -1,0 +1,47 @@
+¬Introduction to JavaScript (JS):
+JavaScript is a high-level, interpreted programming language primarily used for creating dynamic and interactive content on webpages. It was originally created to make web pages more dynamic and interactive. JS allows developers to add features like interactivity, animations, and user input validation to web pages.
+Js Single-threaded programming language. It means that only one command is performed at a time. The JavaScript engine runs each line of code 
+JavaScript can only do one operation...
+
+What is JavaScript?
+JavaScript is a lightweight, interpreted programming language that allows you to implement complex features on web pages. It enhances the interactivity of web pages by allowing you to manipulate HTML and CSS, handle events, perform calculations, and communicate with servers.
+
+How JavaScript Works?
+JavaScript code is typically embedded directly into HTML documents and executed by web browsers. When a web page containing JavaScript is loaded, the browser's JavaScript engine interprets and executes the code, allowing the page to respond to user actions and events.
+
+Latest Version of JavaScript:
+The latest version of JavaScript is ECMAScript 2021 (ES12), which introduces new features and enhancements to the language. JavaScript engines in modern web browsers continually update to support the latest version of ECMAScript.
+
+About V8 Engine:
+The V8 engine is an open-source JavaScript engine developed by Google for the Chrome web browser. It is also used in Node.js. V8 compiles JavaScript code directly into native machine code for efficient execution, using techniques like just-in-time (JIT) compilation.
+	
+Why Node.js is Required?
+Node.js is a server-side runtime environment that allows you to run JavaScript code on the server. It is required for building scalable, high-performance web applications and server-side APIs. Node.js enables developers to use JavaScript for both client-side and server-side development, making it possible to share code between the front-end and back-end.
+
+Single Thread in JavaScript:
+JavaScript is single-threaded, meaning it can only execute one task at a time in the same process. However, asynchronous programming techniques like callbacks, promises, and async/await allow JavaScript to handle multiple tasks concurrently without blocking the execution of other code.
+
+
+Variables in JavaScript:
+Variables in JavaScript are used to store data values. They provide a way to reference and manipulate data within a program. Variables like a container to store temporary data..
+
+var:
+
+Scope: var has function-level scope. This means that variables declared with var are scoped to the nearest enclosing function, rather than the nearest enclosing block (like if statements or loops).
+Hoisting: Variables declared with var are hoisted to the top of their scope. This means that they can be accessed and used before they are declared, although their value will be undefined until assigned.
+Redeclaration: Variables declared with var can be redeclared within the same scope without raising an error.
+Reassignment: Variables declared with var can be reassigned a new value.
+
+let:
+
+Scope: let has block-level scope. This means that variables declared with let are scoped to the nearest enclosing block, whether it's a loop, a conditional statement, or a function.
+Hoisting: Variables declared with let are hoisted to the top of their block scope, but unlike var, they are not initialized. This is called the "temporal dead zone" (TDZ), and accessing a let variable before its declaration will result in a ReferenceError.
+Redeclaration: Variables declared with let cannot be redeclared within the same block scope. Attempting to do so will result in a SyntaxError.
+Reassignment: Variables declared with let can be reassigned a new value.
+
+const:
+
+Scope: const also has block-level scope, like let.
+Hoisting: Similar to let, variables declared with const are hoisted to the top of their block scope, but they are not initialized. Accessing a const variable before its declaration will result in a ReferenceError.
+Redeclaration: Variables declared with const cannot be redeclared within the same block scope. Attempting to do so will result in a SyntaxError.
+Reassignment: Variables declared with const cannot be reassigned a new value after initialization. However, for objects and arrays, the properties or elements of the object or array can be modified.

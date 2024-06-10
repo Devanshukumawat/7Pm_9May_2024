@@ -45,3 +45,74 @@ Scope: const also has block-level scope, like let.
 Hoisting: Similar to let, variables declared with const are hoisted to the top of their block scope, but they are not initialized. Accessing a const variable before its declaration will result in a ReferenceError.
 Redeclaration: Variables declared with const cannot be redeclared within the same block scope. Attempting to do so will result in a SyntaxError.
 Reassignment: Variables declared with const cannot be reassigned a new value after initialization. However, for objects and arrays, the properties or elements of the object or array can be modified.
+
+
+
+
+
+Datatype in js:
+String:
+Definition: Strings are sequences of characters, enclosed within single quotes ('') or double quotes ("") in JavaScript.
+Example: "Hello, World!", 'JavaScript is awesome!'
+Usage: Strings are commonly used to represent text data in JavaScript. They can contain letters, numbers, symbols, and whitespace.
+Number:
+Definition: Numbers in JavaScript can be integers or floating-point numbers (decimals).
+Example: 10, 3.14, -7
+Usage: Numbers are used for arithmetic operations, calculations, and numeric comparisons in JavaScript.
+Boolean:
+Definition: Booleans represent true or false values.
+Example: true, false
+Usage: Booleans are used for logical operations, conditional statements, and boolean expressions in JavaScript.
+Array:
+Definition: Arrays are ordered collections of values, indexed by integers starting from 0.
+Example: [1, 2, 3, 4], ['apple', 'banana', 'orange']
+Usage: Arrays are used to store multiple values in a single variable. They can contain elements of any data type, including other arrays.
+Object:
+Definition: Objects are collections of key-value pairs, where keys are strings (or symbols) and values can be any data type, including other objects.
+Example: { name: 'Devanshu', age: 30, city: 'Jaipur' }
+Usage: Objects are used to represent complex data structures and entities in JavaScript. They are often used for modeling real-world entities, such as users, products, or events.
+
+Operator in js:
+
+Arithmetic Operators:
+Addition (+): Adds two operands.
+Subtraction (-): Subtracts the second operand from the first.
+Multiplication (*): Multiplies two operands.
+Division (/): Divides the first operand by the second.
+Modulus (%): Returns the remainder of a division operation.
+Increment (++): Increases the value of a variable by 1.
+Decrement (--): Decreases the value of a variable by 1.
+
+Assignment Operators:
+Assignment (=): Assigns a value to a variable.
+Addition Assignment (+=): Adds the value of the right operand to the variable and assigns the result to the variable.
+Subtraction Assignment (-=): Subtracts the value of the right operand from the variable and assigns the result to the variable.
+Multiplication Assignment (*=): Multiplies the variable by the value of the right operand and assigns the result to the variable.
+Division Assignment (/=): Divides the variable by the value of the right operand and assigns the result to the variable.
+Modulus Assignment (%=): Assigns the remainder of the division of the variable by the right operand to the variable.
+Exponentiation Assignment (=)**: Raises the variable to the power of the right operand and assigns the result to the variable.
+
+Comparison Operators:
+Equal (==): Returns true if two operands are equal.
+Not Equal (!=): Returns true if two operands are not equal.
+Strict Equal (===): Returns true if two operands are equal and of the same data type.
+Strict Not Equal (!==): Returns true if two operands are not equal and/or not of the same data type.
+Greater Than (>): Returns true if the first operand is greater than the second.
+Greater Than or Equal To (>=): Returns true if the first operand is greater than or equal to the second.
+Less Than (<): Returns true if the first operand is less than the second.
+Less Than or Equal To (<=): Returns true if the first operand is less than or equal to the second.
+
+
+
+
+Functions in js:
+Definition:
+A function in JavaScript is a block of code designed to perform a particular task. It is executed when "called" or "invoked".
+Functions can take parameters (inputs) and return a value (output).
+Function Declaration:
+Function Expression:
+Arrow Functions (ES6):
+Parameters and Arguments:
+Return Statement:
+Function Scope:
+Function Hoisting:

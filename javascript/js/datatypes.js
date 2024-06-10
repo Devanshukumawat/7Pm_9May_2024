@@ -49,14 +49,17 @@
 
 // object  {}
 
-// let obj = {
+// let student = {
 //     name:"Dev",
 //     class:12,
 //     age:34,
 //     section:"B"
 // }
 
-// console.log(obj.age)
+// console.log(student.age)
+
+
+
 
 
 

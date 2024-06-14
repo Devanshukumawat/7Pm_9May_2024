@@ -60,5 +60,14 @@
 // }
 
 
+function add(){
+    return firstName = "Devanshu"
+}
+
+console.log(add())
+
+
+
+
 
 

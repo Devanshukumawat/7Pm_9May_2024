@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: red;
+      }
+      h2 {
+        text-align: center;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- dd/mm/yy h:m:s -->
+
+    <h1 id="date"></h1>
+    <h2 id="time"></h2>
+
+    <script>
+      setInterval(() => {
+        const AllDate = new Date();
+
+        // date
+
+        let todayDate = AllDate.getDate();
+        let todayMonth = AllDate.getMonth();
+        const months = [
+          "Jan",
+          "Feb",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ];
+        let monthName = months[todayMonth];
+        let todayYear = AllDate.getFullYear();
+
+        // time
+
+        let todayHours = AllDate.getHours();
+        let todayMin = AllDate.getMinutes();
+        let todaySec = AllDate.getSeconds();
+
+        const TimeOfDate = `Time :-  ${todayHours}:${todayMin}:${todaySec}`;
+        const DateOfTime = `Date :-  ${todayDate}/${
+          todayMonth + 1
+        }/${todayYear}`;
+
+        document.getElementById("time").innerText = TimeOfDate;
+        document.getElementById("date").innerText = DateOfTime;
+      }, 1000);
+
+      // setInterval(()=>{},1000)
+      // 1000Milisec = 1sec
+      // 5000milisec = 5sec
+
+      // setInterval(()=>{
+      //     console.log("Hello I am a interval fun")
+      // },2000)
+    </script>
+  </body>
+</html>

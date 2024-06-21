@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptate.
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, ratione!</p>
+    </h2>
+
+    <div id="container">
+        Lorem ipsum dolor sit amet.
+        <h4>Lorem ipsum dolor sit amet.</h4>
+    </div>
+
+    <img src="./media/pexels-oandremoura-4019858.jpg" alt="" width="100px" id="image">
+
+    <a href="http://google.in" id="link">Google</a>
+
+    <button id="btn">login</button>
+
+    <script>
+        let a =  document.getElementById("heading").innerHTML
+        console.log(a)
+        let b = document.getElementById("container").innerText
+        console.log(b)
+
+        let image = document.getElementById("image").attributes[0].value = "./media/pexels-skyler-ewing-266953-4877068.jpg"
+        console.log(image)
+
+        let link = document.getElementById("link").attributes[0].value = "http://amazon.in"
+        console.log(link)
+
+        let btn = document.getElementById("btn").style.backgroundColor = "red"
+        console.log(btn)
+
+
+
+    </script>
+</body>
+</html>

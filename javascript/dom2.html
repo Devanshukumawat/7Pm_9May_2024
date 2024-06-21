@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: green;
+            color: white;
+            padding: 3px 20px 3px 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./media/pexels-rednguyen-11210386.jpg" alt="" width="200px" id="image">
+    <button onclick="changeImage()">Change Image</button>
+
+    <a href="http://amazon.in" id="link">Amazon</a>
+    <button onclick="changeLink()">Change Link</button>
+    <!-- events -->
+
+    <button>pre</button>
+    <button>next</button>
+
+    <button class="btn" onclick="changeColor()">Color</button>
+
+
+    <script>
+        function changeImage(){
+           let a = document.getElementById("image").attributes[0].value = "./media/pexels-rednguyen-11210386.jpg"
+           if(a==="./media/pexels-rednguyen-11210386.jpg"){
+            document.getElementById("image").attributes[0].value = "./media/pexels-skyler-ewing-266953-4877068.jpg"
+           }
+           if(a==="./media/pexels-skyler-ewing-266953-4877068.jpg"){
+            document.getElementById("image").attributes[0].value = "./media/pexels-rednguyen-11210386.jpg"
+           }
+        }
+
+        function changeLink(){
+            document.getElementById("link").attributes[0].value = "http://google.in"
+            document.getElementById("link").innerText = "Google"
+        }
+
+       
+        function changeColor(){
+            document.getElementsByClassName("btn")[0].style.backgroundColor = "red"
+
+        }
+
+    </script>
+</body>
+</html>

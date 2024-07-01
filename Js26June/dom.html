@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      h1 {
+        color: blue;
+        text-align: center;
+      }
+
+      #ColorBtn {
+        background-color: green;
+        color: white;
+        padding: 3px 30px 3px 30px;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Devanshu</h1>
+    <button onclick="color()">Color</button>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis
+      quae porro ut quasi reiciendis aut nostrum fugiat possimus repudiandae
+      dignissimos autem, vero at, corporis rerum itaque molestias laborum fugit
+      recusandae quisquam veniam suscipit odit et perferendis. Laborum iste quas
+      tempora, veniam eius vitae maiores illum ex iure velit magnam nihil?
+    </p>
+
+    <button onclick="darkMode()" id="btn"></button>
+
+    <button id="ColorBtn" onclick="Btncolor()">Color Change Btn</button>
+
+    <input type="password" name="" id="pass" />
+    <button onclick="Password()" id="passBtn"></button>
+
+    <br><br><br>
+
+    <form action="" onsubmit="return handleForm()">
+        <label for="">Password</label>
+        <input type="text" name="" id="password"  value="Hello">
+        <label for="">Confirm Password</label>
+        <input type="text" name="" id="cpassword" value="class">
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <script>
+
+let pass = document.getElementById("password")
+let cpass = document.getElementById("capssword")
+
+console.log(pass)
+console.log(cpass)
+
+        function handleForm(){
+            let pass = document.getElementById("pass").value
+            let cpass = document.getElementById("capss").value
+            if(pass !== cpass){
+                return false
+            }
+        }
+
+
+
+      document.getElementById("passBtn").innerText = "Show";
+
+      function Password() {
+        let password = document.getElementById("pass");
+        if (password.type == "password") {
+          password.type = "text";
+          document.getElementById("passBtn").innerText = "Hide";
+        } else {
+          password.type = "password";
+          document.getElementById("passBtn").innerText = "Show";
+        }
+      }
+
+      function color() {
+        document.getElementById("heading").style.color = "green";
+      }
+
+      document.getElementById("btn").innerText = "dark";
+
+      function darkMode() {
+        let bg = document.body.style.backgroundColor;
+        let text = document.body.style.color;
+
+        if (bg == "") {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("btn").innerText = "light";
+        } else if (bg == "black") {
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document.getElementById("btn").innerText = "dark";
+        } else if (bg == "white") {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("btn").innerText = "light";
+        }
+      }
+
+      function Btncolor() {
+        let Color = document.getElementById("ColorBtn").style.backgroundColor;
+        if (Color == "green") {
+          document.getElementById("ColorBtn").style.backgroundColor = "red";
+        } else {
+          document.getElementById("ColorBtn").style.backgroundColor = "green";
+        }
+      }
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <marquee direction="right" id="error"></marquee>
+    
+    <form action="" onsubmit="return handleForm()">
+        <label for="">Password</label>
+        <input type="text" name="" id="password"  >
+        <label for="">Confirm Password</label>
+        <input type="text" name="" id="cpassword" >
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1 id="output"></h1>
+    <select name="" id="select" onchange="SelectedValue()">
+        <option value="Sambhar">Sambhar</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Ajmer">Ajmer</option>
+    </select>
+
+    <input type="color" name="" id="color" onchange="Theme()" >
+    <input type="color" name="" id="ColorText" onchange="colorTheme()">
+
+    <script>
+
+        console .log(window)
+
+        function Theme(){
+            let Color = document.getElementById("color").value
+            document.body.style.backgroundColor = Color
+        }
+
+        function colorTheme(){
+            let Color = document.getElementById("ColorText").value
+            document.body.style.color = Color
+        }
+
+        function SelectedValue(){
+           let SelectValue =  document.getElementById("select").value
+           console .log(SelectValue)
+           document.getElementById("output").innerText = "You Select :- " + SelectValue
+        }
+
+        function handleForm(){
+            let pass = document.getElementById("password")
+            let cpass = document.getElementById("cpassword")
+
+            if(pass.value !== cpass.value){
+                document.getElementById("error").innerText = "Password Did Not Match.. 🙂"
+                document.getElementById("password").style.borderColor = "red"
+                document.getElementById("cpassword").style.borderColor = "red"
+                return false
+            }
+
+
+        }
+    </script>
+
+
+</body>
+</html>

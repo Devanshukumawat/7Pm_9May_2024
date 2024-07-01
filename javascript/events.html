@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        input{
+            border: none;
+            border-radius: 100%;
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil vero quod laboriosam magnam omnis accusamus aspernatur ea, porro asperiores facere.</p>
+
+    <select name="" id="drop" onchange="changeVAlue()">
+      <option value="html">html</option>
+      <option value="css">css</option>
+      <option value="js">js</option>
+    </select>
+
+    <h1 id="output"></h1>
+
+    <label for="">Bg</label>
+    <input type="color" name="" id="colorpick" onchange="colorBody()">
+    <label for="">Text</label>
+    <input type="color" name="" id="text" onchange="colorBody()">
+
+    <script>
+
+        function changeVAlue(){
+            const drop = document.getElementById("drop").value;
+            document.getElementById("output").innerText = "You select :- "+drop
+        }
+
+        function colorBody(){
+          let colorPic =   document.getElementById("colorpick").value
+          document.body.style.backgroundColor = colorPic
+          let text = document.getElementById("text").value
+          document.body.style.color = text
+        }
+
+
+        console.log(window)
+
+
+      
+    </script>
+  </body>
+</html>

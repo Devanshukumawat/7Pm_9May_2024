@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, vero illo!
+      Illo officia aperiam maiores, facere accusantium illum quae, explicabo,
+      cumque libero ad doloribus eligendi possimus iure odio voluptas quisquam
+      esse quidem a eos. Illo alias, dolor ratione aliquam nemo deleniti iusto.
+      Ullam cumque voluptas quis deserunt, quaerat voluptatibus voluptates!
+    </p>
+
+    <button id="btn" onclick="darkMode()"></button>
+
+    <input type="password" name="" id="pass">
+    <button id="btn1" onclick="password()"></button>
+
+    <script>
+      document.getElementById("btn").innerText = "Dark";
+
+      function darkMode() {
+        let bgColor = document.body.style.backgroundColor;
+
+        if (bgColor == "") {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("btn").innerText = "Light";
+        } else if (bgColor == "black") {
+          document.body.style.backgroundColor = "white";
+          document.body.style.color = "black";
+          document.getElementById("btn").innerText = "Dark";
+        } else if (bgColor == "white") {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+          document.getElementById("btn").innerText = "Light";
+        }
+      }
+
+
+
+     
+       document.getElementById("btn1").innerText = "show"
+      function password(){
+        let password = document.getElementById("pass")
+        if(password.type == "password"){
+            password.type = "text"
+             document.getElementById("btn1").innerText = "hide"
+        }else{
+            password.type = "password"
+             document.getElementById("btn1").innerText = "show"
+        }
+      }
+    </script>
+  </body>
+</html>

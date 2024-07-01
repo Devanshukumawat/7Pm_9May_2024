@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="limit">Counter</h1>
+    <button onclick="increment()" id="btn1">+</button>
+    <h1 id="output"></h1>
+    <button onclick="decrement()" id="btn2">-</button>
+
+    <marquee direction="right" id="error"></marquee>
+    <form action="" onsubmit="return handleSubmit()">
+        <label for="">Password</label>
+        <input type="text" name="" id="pass">
+        <label for="">Confirm Password</label>
+        <input type="text" name="" id="cpass">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+    <script>
+
+
+        function handleSubmit(){
+            let password = document.getElementById("pass")
+        let cpass = document.getElementById("cpass")
+
+        if(password.value!==cpass.value){
+            document.getElementById("error").innerText= "Password did not match ...😕"
+            password.style.borderColor = "red"
+            cpass.style.borderColor = "red"
+            password.style.borderRadius = "5px"
+            cpass.style.borderRadius = "5px"
+
+
+            return false
+
+        }
+        }
+
+        
+
+
+
+
+        let value = 0
+        document.getElementById("output").innerText = value
+
+        function increment(){
+            if(value==10){
+                document.getElementById("limit").innerText += " Yahhooo you reach the limit 🥳"
+            }
+            document.getElementById("output").innerText = value++
+        }
+        function decrement(){
+            if(value){
+                document.getElementById("output").innerText = value--
+            }
+            
+        }
+    </script>
+</body>
+</html>

@@ -57,33 +57,43 @@
 // async await
 
 
-let myPromise = new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-        console.log("Async Task completed ... !")
-        let task = false
-        if(task){
-            resolve({
-                userName:"Devanshu",
-                Password:3456
-            })
-        }else{
-            reject({Error:"Task Error...!"})
-        }
-    },2000)
+// let myPromise = new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("Async Task completed ... !")
+//         let task = false
+//         if(task){
+//             resolve({
+//                 userName:"Devanshu",
+//                 Password:3456
+//             })
+//         }else{
+//             reject({Error:"Task Error...!"})
+//         }
+//     },2000)
+// })
+
+
+
+// async function myFun(){
+//     try {
+//         let data = await myPromise
+//         console.log(data)
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// myFun()
+
+
+fetch("https://dummyjson.com/products").then((res)=>{
+    return res.json()
+}).then((data)=>{
+    console.log(data)
 })
-
-
-
-async function myFun(){
-    try {
-        let data = await myPromise
-        console.log(data)
-    } catch (error) {
-        console.log(error)
-    }
-}
-
-myFun()
+.catch((error)=>{
+    console.log(error)
+})
 
 
 

@@ -1,0 +1,20 @@
+{
+   "Product" : {"Product1":{
+        "productName":"I-phone",
+        "productPrice":"$567",
+        "productRating":4.5,
+        "productImage":["../media/pexels-oandremoura-4019858.jpg"]
+    },
+    "Product2":{
+        "productName":"Samsung",
+        "productPrice":"$888",
+        "productRating":4.2,
+        "productImage":["../media/pexels-rednguyen-11210386.jpg"]
+    },
+    "Product3":{
+        "productName":"MI",
+        "productPrice":"$234",
+        "productRating":4.1,
+        "productImage":["../media/pexels-steve-1269968.jpg"]
+    }}
+}

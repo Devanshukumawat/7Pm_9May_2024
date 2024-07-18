@@ -1,0 +1,31 @@
+.main{
+  width: 200px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.cardimg{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.heading1{
+  color: brown;
+  text-align: center;
+}
+
+.title{
+  color: green;
+  text-align: center;
+}
+
+.button{
+  background-color: orange;
+  color: grey;
+  border: none;
+  width: 200px;
+  padding: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}

@@ -2,6 +2,7 @@
 // import Text from "./comp/Text";
 
 // import Form from "./comp/Form";
+import Hooks from "./Hooks";
 import Todo from "./Todo/Todo";
 
 // import Counter from "./comp/Counter";
@@ -19,6 +20,8 @@ function App() {
 
   return ( 
     <>
+
+      {/* <Hooks/> */}
       <Todo/>
 
       {/* <Form/> */}

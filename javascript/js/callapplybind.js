@@ -1,6 +1,6 @@
-// // const allDetails =function (address){
-// //     console.log("FirstName :- "+this.firstName + " LastName :- "+this.lastName + " Address:- "+address)
-// // }
+const allDetails =function (address){
+    console.log("FirstName :- "+this.firstName + " LastName :- "+this.lastName + " Address:- "+address)
+}
 
 // // const obj = {
 // //     firstName:"Devanshu",

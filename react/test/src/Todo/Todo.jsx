@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import TodoCss from "./style.module.css";
 
 function Todo() {
-  const Task = [
+  const Task =  JSON.parse(localStorage.getItem("todo_data")) || [
     { taskName: "Buy Bike", complete: true },
     { taskName: "Buy Car", complete: false },
   ];
@@ -11,6 +11,9 @@ function Todo() {
   const [complete,setComplete] = useState(0)
   const [remaining,setRemaining] = useState(0)
   const [totalTask,setTotalTask] = useState(0)
+  const DarkMode = useRef("")
+  const DarkModeicon = useRef("")
+  console.log(DarkModeicon)
 
   function handleForm(e) {
     e.preventDefault();
@@ -32,10 +35,6 @@ function Todo() {
     const copyOfArray = [...allTask];
     copyOfArray[key].complete = !copyOfArray[key].complete;
     setAllTask(copyOfArray);
-
-    
-
-
   }
 
   function handleDelete(id) {
@@ -82,12 +81,47 @@ function Todo() {
     })
 
     setTotalTask(totalTasks.length)
+
+    localStorage.setItem("todo_data",JSON.stringify(copyOfArray))
+
   },[allTask])
+
+  function handleDarkmode(){
+
+    let mode = DarkMode.current.style.backgroundColor
+    console.log(mode)
+
+    if(mode===""){
+      DarkMode.current.style.backgroundColor = "black"
+    DarkMode.current.style.color = "white"
+    DarkModeicon.current.className =  "bi bi-toggle2-on text-center d-block fs-2"
+
+    }
+    else if(mode==="white"){
+      DarkMode.current.style.backgroundColor = "black"
+    DarkMode.current.style.color = "white"
+    DarkModeicon.current.className =  "bi bi-toggle2-on text-center d-block fs-2"
+    }
+    else{
+      DarkMode.current.style.backgroundColor = "white"
+    DarkMode.current.style.color = "black"
+    DarkModeicon.current.className =  "bi bi-toggle2-off text-center d-block fs-2"
+    }
+
+    
+  }
+
 
   return (
     <>
+    <div ref={DarkMode}>
     <h4 className="text-center">Total Task :- {totalTask} </h4>
-      <div className={TodoCss.main}>
+    <i className="bi bi-toggle2-off text-center d-block fs-2"
+    ref={DarkModeicon}
+    onClick={handleDarkmode}
+    ></i>
+      <div className={TodoCss.main}  >
+      
         <div className={TodoCss.todo}>
           <h1>My Todo App 😍</h1>
           <form onSubmit={handleForm}>
@@ -137,6 +171,7 @@ function Todo() {
           <h6>Remaining Tasks :- {remaining} </h6>
 
         </div>
+      </div>
       </div>
     </>
   );
